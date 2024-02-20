@@ -1,2 +1,5 @@
 # testrepo
 tesla = yf.Ticker("TSLA")
+tesla_data = tesla.history(period="max")
+tesla_data.reset_index(inplace=True)
+tesla_data.head()
